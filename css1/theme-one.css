@@ -1,0 +1,105 @@
+.theMenu {
+    background-color:#fff;
+    border-color: #8c98a4;
+}
+.navbar-brand1 {
+    color: #65696a !important;
+}
+.chatText {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b1d1d3+0,e6efee+51,d8e1e0+100 */
+
+background: #b1d1d3; /* Old browsers */
+background: -moz-linear-gradient(top, #b1d1d3 0%, #e6efee 51%, #d8e1e0 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #b1d1d3 0%,#e6efee 51%,#d8e1e0 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #b1d1d3 0%,#e6efee 51%,#d8e1e0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b1d1d3', endColorstr='#d8e1e0',GradientType=0 ); /* IE6-9 */
+
+    
+}
+.botReply{
+	margin-bottom:10px;
+}
+.botImg {
+    background: #83e880;
+    border: 2px solid #fff;
+    display:none !important;
+}
+.reply {
+    background: #fff;
+    box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+}
+.botReplyText {
+    color: #6a6a6a;
+}
+.botReplyTime {
+    color: #0097ff;
+}
+.perReply {
+	margin-bottom:10px;
+}
+.perImg {
+    background: #00b7e3;
+    border: 2px solid white;
+    display:none !important;
+}
+.perImg span {
+    color: #fff;
+}
+.ask {
+    background: #0097ff;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+}
+.perAskText {
+    color: #fff;
+}
+.perReplyTime {
+    color: #caff00;
+}
+.enterText{
+background-color: ;
+}
+.speaker button {
+    background: url(../images/mic.png) no-repeat 10px 6px #39abb1;
+    background-size: 13px;
+    
+}
+.send button {
+    background: url(../images/send.png) no-repeat 8px 7px #fff;
+    border: 2px solid #057da9;
+    background-size: 20px;
+}
+.sendMail {
+    background: url(../images/mail.png) no-repeat 7px 9px #39abb1;
+    border: 1px solid #23969c;
+    background-size: 22px;
+}
+.botOptions {
+    border: 1px solid #0097ff;
+    background: white;
+    color: black;
+}
+.botOptions:hover {
+    background: #0097ff;
+    color: white;
+}
+
+/*  Loader Busy  */
+
+.eye1 {
+   background: #24969c;
+}
+.roboIcon{ 
+	color: #24969c;
+}
+.loader--dot:first-child {
+  background: #901ed6;
+}
+.loader--dot:nth-child(2) {
+  background: #00c350;
+}
+.loader--dot:nth-child(3) {
+  background: #ff00a3;
+}
+.loader--dot:nth-child(4) {
+  background: #0097ff;
+}

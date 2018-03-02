@@ -1,0 +1,105 @@
+.theMenu {
+    background-color: #20bbb7;
+    border-color: #ffffff;
+}
+.logo {
+    background: url(../images/RilLogoWhite.png) no-repeat top left;
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+}
+.navbar-brand1 {
+    background: url(../images/bot-header-white.png) no-repeat 0px 10px;
+    background-size: 25px;
+}
+.navbar-brand1 {
+    color: #046261 !important;
+}
+.chatText {
+    background: url(../images/bg3.jpg) no-repeat;
+    background-size: cover !important;
+    background-position: center top !important;
+}
+.botImg {
+    background: #83e880;
+    border: 2px solid #fff;
+}
+.reply {
+    background: rgba(77, 94, 101, 0.75);
+    box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+}
+.botReplyText {
+    color: #fff;
+}
+.botReplyTime {
+    color: #83e880;
+}
+.perImg {
+    background: #9c64bd;
+    border: 2px solid white;
+}
+.perImg span {
+    color: #fff;
+}
+.ask {
+    background: #361878;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+}
+.perAskText {
+    color: #fff;
+}
+.perReplyTime {
+    color: #a07eef;
+}
+.enterText{
+background-color: ;
+}
+.speaker button {
+    background: url(../images/mic.png) no-repeat 10px 6px #129c99;
+    background-size: 13px;
+}
+.send button {
+    background: url(../images/send.png) no-repeat 7px 7px #fff;
+    border: 2px solid #129c99;
+    background-size: 20px;
+}
+.sendMail {
+    background: url(../images/mail.png) no-repeat 7px 9px #129c99;
+    border: 1px solid #03807d;
+    background-size: 22px;
+}
+.botOptions {
+    border: 1px solid #008a86;
+    background: rgb(32, 187, 183);
+    color: white;
+}
+.botOptions:hover {
+    background: #361878;
+    color: #fff;
+    border-color: #361878;
+}
+
+/*  Loader Busy  */
+
+.eye1 {
+   background: #9d41ff;
+}
+.roboIcon{ 
+	color: #6022ea;
+}
+.loader--dot:first-child {
+  background: #27b922;
+}
+.loader--dot:nth-child(2) {
+  background: #20bbb7;
+}
+.loader--dot:nth-child(3) {
+  background: #9c64bd;
+}
+.loader--dot:nth-child(4) {
+  background: #f34b4b;
+}
+
+
+
+

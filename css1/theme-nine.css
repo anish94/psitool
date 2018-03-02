@@ -1,0 +1,114 @@
+.navbar {
+    margin-bottom: 0px;
+    z-index: 2;
+    border: none;
+    border-bottom: 1px solid white;
+}
+.theMenu {
+    background-color:#ffd430;
+    border-color: #fbffff;
+}
+.logo{
+	background: url(../images/jioLogo.png) no-repeat 5px 11px #f7ab20;
+	border-radius: 25px;
+	width: 40px;
+    height: 40px;
+    margin-top:5px;
+    background-size: 30px;
+}
+.navbar-brand1 {
+    color: #000 !important;
+}
+.navbar-brand1 {
+    background: url(../images/bot-header-white.png) no-repeat 0px 11px;
+    background-size: 25px;
+}
+.chatText {
+	background: #e4e4e4;
+	background-image:none !important;
+    background-size: cover !important;
+    background-position: center top !important;
+}
+.botImg {
+    background: url(../images/bot-header-white.png) no-repeat 4px 2px #48af43;
+    border: 2px solid #30962b;
+    background-size: 22px;
+}
+.botImg span img{
+	opacity: 0;
+}
+.reply {
+    background: #fff;
+}
+.botReplyText {
+    color: #000;
+    }
+.botReplyTime {
+    color: #636363;
+}
+.perImg {
+    background: #f7ab20;
+    border: 2px solid white;
+}
+.perImg span{
+    color: #fff;
+}
+.ask {
+    background: #ff8204;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+}
+.perAskText {
+    color: #fff;
+}
+.perReplyTime {
+    color: #ffd2a5;
+}
+
+.speaker button {
+    background: url(../images/mic.png) no-repeat 10px 6px #abaaaa;
+    background-size: 13px;
+    cursor: pointer;
+}
+.send button {
+    background: url(../images/send.png) no-repeat 7px 7px #ffffff;
+    background-size: 20px;
+    border: 2px solid #057da9;
+}
+.sendMail {
+    background: url(../images/mail.png) no-repeat 7px 9px #005aab;
+    background-size: 22px;
+    border: 1px solid #23297a;
+}
+.botOptions {
+    border: 1px solid #46b245;
+    background: white;
+    color: #46b245;
+}
+.botOptions:hover {
+    background: #46b245;
+    color: white;
+    border-color: #46b245;
+}
+
+/*  Loader Busy  */
+
+.eye1 {
+   background: #f11c1c;
+}
+.roboIcon{ 
+	color: #5490c4;
+}
+.loader--dot:first-child {
+  background: #283891;
+}
+.loader--dot:nth-child(2) {
+  background: #e21a2d;
+}
+.loader--dot:nth-child(3) {
+  background: #f7ab20;
+}
+.loader--dot:nth-child(4) {
+  background: #46bca8;
+}
+
+

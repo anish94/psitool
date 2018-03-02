@@ -1,0 +1,104 @@
+.theMenu {
+    background-color: #012535;
+    border-color: #9a9a9a;
+}
+.navbar-brand1 {
+    color: #efefef !important;
+}
+.navbar-brand1 {
+    background: url(../images/bot-header-white.png) no-repeat 0px 10px;
+    background-size: 25px;
+}
+.chatText {
+    background: url(../images/bg2.jpg) no-repeat;
+    background-size: cover !important;
+    background-position: center top !important;
+}
+.botImg span img {
+    width: 22px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+.botImg {
+    background: #fff;
+    border: 2px solid #fff;
+}
+.reply {
+    background: #fafae0;
+    box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+}
+.botReplyText {
+    color: #000;
+}
+.botReplyTime {
+    color: #a5a5a5;
+}
+.perImg {
+    background: #0a7173;
+    border: 2px solid white;
+}
+.perImg span {
+    color: #fff;
+}
+.ask {
+    background: #1bb9bc;
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+.perAskText {
+    color: #fff;
+}
+.perReplyTime {
+    color: #015d5f;
+}
+.enterText{
+background-color: ;
+}
+.speaker button {
+    background: url(../images/mic.png) no-repeat 10px 6px #26b1d0;
+    background-size: 13px;
+}
+.send button {
+    background: url(../images/send.png) no-repeat 8px 7px #ffffff;
+    border: 2px solid #26b1d0;
+    background-size: 20px;
+}
+.sendMail {
+    background: url(../images/mail.png) no-repeat 7px 9px #26b1d0;
+    border: 1px solid #26b1d0;
+    background-size: 22px;
+}
+.botOptions {
+    border: 1px solid #fafae0;
+    background: #fafae0;
+    color: #484848;
+}
+.botOptions:hover {
+    background: #1bb9bc;
+    color: white;
+    border-color: #1bb9bc;
+}
+
+/*  Loader Busy  */
+
+.eye1 {
+   background: #ff1919;
+}
+.roboIcon{ 
+	color: #394f66;
+}
+.loader--dot:first-child {
+	background: #21a202;
+}
+.loader--dot:nth-child(2) {
+  background: #074bb5;
+}
+.loader--dot:nth-child(3) {
+  background: #d43e3e;
+}
+.loader--dot:nth-child(4) {
+	background: #1bb9bc;
+}
+
+
+
+
