@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@{
+var dataFile = Server.MapPath("~/App_Data/question1.txt");
+Array userData = File.ReadAllLines(dataFile);
+}
+
+<!DOCTYPE html>
 <html lang='en'>
 <head>
     <meta charset='utf-8'>
@@ -7,13 +12,13 @@
     <title> Chat Bot </title>
     
     <link rel='Stylesheet' type='text/css' href='css1/iconmoon.css' />
-<!--     <link rel='Stylesheet' type='text/css' href='css/bootstrap.min.css' />  -->
+
     <link rel='Stylesheet' type='text/css' href='css1/customNew.css' />  
     <link rel='Stylesheet' id="btheme" type='text/css' href='css1/theme-four.css' />  
      
 
     <script src='js/jquery-2.1.4.min.js'> </script>
-<!--     <script src='js/bootstrap.min.js'> </script>  -->
+
  
     <style>
       .themeChange{ position:fixed; top:10px; display:inline-block; left:20px;}
@@ -25,173 +30,43 @@
 </head>
 
 <body>
-  <div class="themeChange">
-   <span class="sizer css-one"> 1 </span>
-   <span class="sizer css-two"> 2 </span>
-   <span class="sizer css-three"> 3 </span>
-   <span class="sizer css-default"> 4 </span>
-   <span class="sizer css-five"> J1 </span>
-   <span class="sizer css-six"> J2 </span>
-   <span class="sizer css-seven"> J3 </span>
-   <span class="sizer css-eight"> J4 </span>
-   <span class="sizer css-nine"> J5 </span>
-   <span class="sizer css-ten"> J6 </span>
-   <span class="sizer css-eleven"> J7 </span>
-  
-  </div>
+ 
     <div class="botBody">
        <div class="theMenu">
 <!-- 	     <nav class="navbar navbar-default"> -->
 <!-- 	        <div class="container-fluid"> -->
 	          <div class="navbar-header1">
 	            <span class="logo"> &nbsp; </span>
-	            <a class="navbar-brand1" href="#"> Live Chat </a>            
+	            <a class="navbar-brand1" href="#"> Process Safety Incident Evaluation </a>            
 	          </div>
 <!-- 	        </div> -->
 <!-- 	      </nav>     -->
        </div>
        
        <div class="chatText">
-         <div class="chatTextArea scrollbar-outer">
-            <div class="botReply">
-	               <div class="botImg">
-	                 <span >
-	                      <img src="images/bot-header.png" />
-	                 </span>  
-	              
-	               </div>
-	                <div class="clear"></div>
-                  <div class="reply">
-	                   <div class="botReplyText">
-	                        Some default text.
-	                  </div>
-	                  <div class="botReplyTime">
-	                        10:22 Am
-	                  </div>         
-                  </div>
-                <div class="clear"></div>
-            </div>
+         <div id="abc" class="chatTextArea">
+          <div class="Question" >
+                   <h1>Reading Data from a File</h1>
+                  @foreach (string dataLine in userData) 
+                   {
+                     foreach (string dataItem in dataLine) 
+                      {@dataItem <text>&nbsp;</text>}
+  <br />
+}        
+
+          </div>
+         </div>
        
-	      <div class="perReply">
-		               <div class="perImg">
-		                 <span >
-		                    You
-		                 </span>  
-		              
-		               </div>
-		                <div class="clear"></div>
-	                  <div class="ask">
-		                   <div class="perAskText">
-		                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-		                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-		                         nisi ut aliquip ex ea commodo consequat.
-		                  </div>
-		                  <div class="perReplyTime">
-		                        10:22 Am
-		                  </div>                
-	                  </div>
-	                <div class="clear"></div>
-	            </div>
-        
-	      <div class="botOptionsContainer">
-	       <div class="botOptions"> Alpha  </div>
-	       <div class="botOptions"> Beta  </div>
-	       <div class="botOptions"> Charlie  </div>
-	       <div class="botOptions"> Delta  </div>
-	       <div class="botOptions"> Echo  </div>
-	       <div class="botOptions"> Foxtrot  </div>
-	       <div class="botOptions"> Gamma  </div>
-	       <div class="botOptions"> Hotel  </div>
 	      
-	      </div>
+        
          </div>
        
            
        
        </div>
         <div class="clear"></div>
-       <div class="MsgArea">
-       <div class="msgTestArea">
-        <input class="enterText" type="text" class="inputArea" placeholder="Type your text here.">
-       <div class="speaker">  <button> &nbsp;</button> </div>
-       <div class="send"> <button> &nbsp; </button> </div>
-       </div>       
-       <div class="msgMail">
-           <button class="sendMail"> &nbsp; </button>
-       </div>     
-       
-       </div>
-     <div class="clear"></div>
-          <!--  Busy Indicator Code  -->
-	    <div class="busyInput" >
-				<input type="text" disabled class="dummyInput" />
-		<div class="busy2">
-		     <div class='loader'>
-		    <div class='loader--dot'></div>
-		    <div class='loader--dot'></div>
-		    <div class='loader--dot'></div>
-		    <div class='loader--dot'></div>
-		  </div>
-		  <div class="roboPos">
-		     <div class="eye1 lefteye1">&nbsp;</div>
-		    <div class="eye1 righteye1">&nbsp;</div>
-<!-- 		    <div class="busyBot1">&nbsp;</div> -->
-<div class="roboIcon icon-bot-chat-001" aria-hidden="true"></div>
-		    </div>
-		</div>
-		</div> 
-		<!--  Busy Indicator Code Ends -->
-    </div> 
-
-<script>
-$(document).ready(
-		function scrollBottom(){
-			var target = $('.chatTextArea'); 
-			target.animate({scrollTop: target.height()}, 9);
-			
-			// Theme changer
-		      $(".css-one").click(function() {
-		          $("#btheme").attr({href : "css1/theme-one.css"});
-		        });
-
-		        $(".css-two").click(function() {
-		          $("#btheme").attr({href : "css1/theme-two.css"});
-		        });
-
-		        $(".css-three").click(function() {
-		          $("#btheme").attr({href : "css1/theme-three.css"});
-		        });
-		        
-		        $(".css-default").click(function() {
-			      $("#btheme").attr({href : "css1/theme-four.css"});
-			    });
-		        $(".css-five").click(function() {
-			      $("#btheme").attr({href : "css1/theme-five.css"});
-			    });
-		        $(".css-six").click(function() {
-				      $("#btheme").attr({href : "css1/theme-six.css"});
-				    });
-		        $(".css-seven").click(function() {
-				      $("#btheme").attr({href : "css1/theme-seven.css"});
-				    });
-		        $(".css-eight").click(function() {
-				      $("#btheme").attr({href : "css1/theme-eight.css"});
-				    });
-		        $(".css-nine").click(function() {
-				      $("#btheme").attr({href : "css1/theme-nine.css"});
-				    });
-		        $(".css-ten").click(function() {
-				      $("#btheme").attr({href : "css1/theme-ten.css"});
-				    });
-		        $(".css-eleven").click(function() {
-				      $("#btheme").attr({href : "css1/theme-eleven.css"});
-				    });
-		        
-			
-		} );
-
-
-</script>
+      
+          
 
 </body>
 </html>
